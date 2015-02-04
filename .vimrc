@@ -1,7 +1,7 @@
 execute pathogen#infect()
 
 " NERDTree
-map <C-n> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<cr>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
