@@ -8,6 +8,9 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'Provost/vim-ps1'
+Plugin 'fatih/vim-go'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -23,12 +26,22 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Tabs
+set tabstop=2 shiftwidth=2 expandtab
+
+" Working directory
+set autochdir
+
 " NERDTree
 nmap <C-n> :NERDTreeToggle<cr>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Pyclewn
+map <F9> :Ccontinue<cr>
+map <F8> :Cnext<cr>
 
 " Misc
 inoremap jj <ESC>
