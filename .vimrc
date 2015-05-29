@@ -8,7 +8,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Provost/vim-ps1'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
 
