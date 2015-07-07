@@ -28,6 +28,8 @@ filetype plugin indent on    " required
 " Tabs
 set tabstop=2 shiftwidth=2 expandtab
 
+set lines
+
 " Working directory
 set autochdir
 
