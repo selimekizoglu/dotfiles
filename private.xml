@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>Change Option_L to Control_L</name>
+		<identifier>private.terminal_option_to_control_</identifier>
+		<only>TERMINAL</only>
+		<autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::CONTROL_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::CONTROL_R</autogen>
+	</item>	
+</root>
