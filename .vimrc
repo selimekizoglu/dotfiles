@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
 
@@ -43,7 +44,9 @@ nnoremap <C-l> <C-w>l
 
 " Solarized
 syntax enable
-set background=dark
+set background=light
+set t_Co=256
+let g:solarized_termcolors=256
 colorscheme solarized
 
 " Misc
