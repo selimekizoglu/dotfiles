@@ -1,3 +1,5 @@
+let mapleader = ","
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -28,9 +30,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Mapleader
-let mapleader=","
-
 " Tabs
 set tabstop=2 shiftwidth=2 expandtab
 
@@ -46,6 +45,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 " Tagbar
 nmap <C-t> :TagbarToggle<cr>
 
@@ -53,7 +55,7 @@ nmap <C-t> :TagbarToggle<cr>
 syntax enable
 set background=light
 set t_Co=256
-let g:solarized_termcolors=256
+let g:solarized_termcolors = 256
 colorscheme solarized
 
 " Misc
@@ -70,9 +72,9 @@ inoremap <right> <nop>
 :set tags=./tags;~/workspace
 
 " Golang
-let g:go_highlight_functions=1
-let g:go_highlight_methods=1
-let g:go_highlight_structs=1
-let g:go_highlight_interfaces=1
-let g:go_highlight_operators=1
-let g:go_highlight_build_constraints=1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
