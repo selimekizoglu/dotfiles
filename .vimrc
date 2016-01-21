@@ -10,6 +10,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'majutsushi/tagbar'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
 
@@ -26,6 +27,9 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Mapleader
+let mapleader=","
 
 " Tabs
 set tabstop=2 shiftwidth=2 expandtab
@@ -59,3 +63,5 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+:set tags=./tags;~/workspace
