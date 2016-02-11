@@ -1,7 +1,7 @@
 let mapleader = ","
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -31,15 +31,19 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Tabs
-set tabstop=2 shiftwidth=2 expandtab
+set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
+" Show line numbers
 set number
 
 " Working directory
 set autochdir
 
+" --------------------------------------------------------
+"  Key mappings
+" --------------------------------------------------------
 " NERDTree
-nmap <C-n> :NERDTreeToggle<cr>
+nmap <C-N> :NERDTreeToggle<cr>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -60,6 +64,11 @@ colorscheme solarized
 
 " Misc
 inoremap jj <ESC>
+inoremap jJ <ESC>
+inoremap JJ <ESC>
+inoremap Jj <ESC>
+
+" Disable arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -68,6 +77,9 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" Save as sudo user
+cmap w!! w !sudo tee > /dev/null %
 
 :set tags=./tags;~/workspace
 
