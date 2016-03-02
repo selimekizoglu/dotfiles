@@ -57,7 +57,7 @@ nmap <C-t> :TagbarToggle<cr>
 
 " Solarized
 syntax enable
-set background=light
+set background=dark
 set t_Co=256
 let g:solarized_termcolors = 256
 colorscheme solarized
