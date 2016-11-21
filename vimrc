@@ -15,6 +15,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
+Plugin 'elmcast/elm-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -61,6 +62,9 @@ set background=dark
 set t_Co=256
 let g:solarized_termcolors = 256
 colorscheme solarized
+
+" elm-vim
+let g:elm_format_autosave = 1
 
 " Misc
 inoremap jj <ESC>
